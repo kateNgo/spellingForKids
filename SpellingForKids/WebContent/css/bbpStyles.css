@@ -1,0 +1,250 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Helvetica Neue", Roboto, Helvetica, Verdana, Tahoma, Arial,
+		sans-serif;
+}
+/* For width 400px and larger: */
+body {
+	
+}
+
+/*  common styles */
+a {
+	text-decoration: none;
+}
+
+img {
+	/* width:100%;*/
+	height: auto;
+}
+/* details */
+/*
+@media only screen and (min-width:991px){
+	header{
+		height: 100px;
+		text-shadow: 0 0 3px #FF0000;
+	}
+}
+@media only screen and (min-width:600px){
+	header{
+		height: 68px;
+		text-shadow: 0 0 1px #FF0000;
+	}
+}
+*/
+button, .button {
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+header {
+	text-shadow: 0 0 3px #FF0000;
+	background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo,
+		violet); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo,
+		violet); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo,
+		violet); /* For Fx 3.6 to 15 */
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo,
+		violet); /* Standard syntax (must be last) */
+}
+
+main {
+	width: 100%;
+	float: left;
+	height: 500px;
+}
+
+main:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+/* icon bar */
+.icon-bar {
+	line-height: 0.8;
+	padding: 0px;
+	float: right;
+}
+
+.icon-bar>* {
+	padding: 0px;
+}
+/* menu */
+nav {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid white;
+	/*background-color :#ff99ff;*/
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	width: 100%;
+	margin: 15px;
+}
+
+nav ul li {
+	padding: 8px;
+	display: inline;
+	margin-left: 30px;
+	margin-right: 10px;
+}
+
+nav ul li a:hover {
+	color: #0099cc;
+}
+
+nav ul li a {
+	color: #ffffff;
+}
+
+/* ****************************content */
+section {
+	
+}
+
+.content {
+	
+}
+.content .image img{
+	width:70%;
+	height:auto;
+}
+
+.alphabet, .answer {
+	height: 100px;
+	display: block;
+	clear: left;
+}
+
+.alphabet {
+	margin-top: 10px;
+}
+
+.answer {
+	margin-top: -10px;
+}
+
+.divLetter {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid #aaaaaa;
+}
+
+.divLetter img {
+	width: 45px;
+	height: 45px;
+}
+
+.content .image {
+	height: 200px;
+	margin-top: 20px;
+}
+
+.divButton {
+	float: left;
+	clear: left;
+	margin-top: 5px;
+}
+
+.note {
+	clear: left;
+	float: left;
+}
+
+.note h5 {
+	color: teal;
+	font-family: "Helvetica Neue", Roboto, Helvetica, Verdana, Tahoma, Arial,
+		sans-serif;
+	font-style: italic;
+	font-size: 75%;
+}
+
+.alphabet h5 {
+	color: fuchsia;
+	font-family: "Helvetica Neue", Roboto, Helvetica, Verdana, Tahoma, Arial,
+		sans-serif;
+	font-size: 85%;
+	font-style: italic;
+}
+
+.answer h5 {
+	color: yellow;
+	font-family: "Helvetica Neue", Roboto, Helvetica, Verdana, Tahoma, Arial,
+		sans-serif;
+	font-size: 85%;
+	font-style: italic;
+}
+
+#myModal {
+	/*background-color: #e5ffff;
+ color:black;*/
+	
+}
+/***** template ****/
+.top-bar {
+	background: -webkit-linear-gradient(#9a31ce, #ca95fd);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#9a31ce, #ca95fd);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#9a31ce, #ca95fd);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #9a31ce, #ca95fd);
+	/* Standard syntax (must be last)*/
+}
+
+@media screen and (min-width:40em) {
+	.top-bar-left {
+		float: left;
+		
+	}
+	.top-bar-right {
+		float: right
+		
+	}
+}
+.menu-text{
+	
+	color:white;
+	font-size:150%;
+	font-weight:bold;
+	font-style:italic;
+}
+.menu>li>a{
+	color:white;
+}
+
+/* end content */
+/* fbar for the home oage */
+footer {
+    bottom: 0;
+    font-size: 10pt;
+    height: 35px;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.fbar {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 100%;
+    font-size: small;
+    margin-left: -27px;
+}
+.fbar span{
+	float:right;
+	margin-right: 30px;
+	white-space: nowrap;
+	font-family: arial,sans-serif;
+	background: #fff;
+	color: #222;
+}

@@ -1,0 +1,80 @@
+<span id="answerToCheck" style="visibility: hidden;">apple</span>
+<div class="row">
+	<div class="small-12 large-12 columns note">
+		<h5>Please drag letters into their right positions. Click on
+			picture for pronouncing</h5>
+	</div>
+	
+</div>
+<div class="row content">
+	<div class="small-6 large-3 columns image">
+		<a href="#" class="th radius"><img src="images/fruits/apple.jpg"
+			alt="Apple" > </a>
+	</div>
+	<div class="small-6 large-9 columns theWord">
+		<div class="alphabet">
+			<h5>Given letters</h5>
+			<div class="divLetter" id="div1" ondrop="drop(event)"
+				ondragover="allowDrop(event)">
+				<img src="images/letters/letterA.png" draggable="true"
+					ondragstart="drag(event)" id="drag1">
+			</div>
+			<div class="divLetter" id="div3" ondrop="drop(event)"
+				ondragover="allowDrop(event)">
+				<img src="images/letters/letterE.png" draggable="true"
+					ondragstart="drag(event)" id="drag2">
+			</div>
+			<div class="divLetter" id="div5" ondrop="drop(event)"
+				ondragover="allowDrop(event)">
+				<img src="images/letters/letterL.png" draggable="true"
+					ondragstart="drag(event)" id="drag3">
+			</div>
+			<div class="divLetter" id="div7" ondrop="drop(event)"
+				ondragover="allowDrop(event)">
+				<img src="images/letters/letterP.png" draggable="true"
+					ondragstart="drag(event)" id="drag4">
+			</div>
+			<div class="divLetter" id="div9" ondrop="drop(event)"
+				ondragover="allowDrop(event)">
+				<img src="images/letters/letterP.png" draggable="true"
+					ondragstart="drag(event)" id="drag5">
+			</div>
+
+		</div>
+
+		<div class="answer" id="yourAnswer">
+			<h5>Your answer</h5>
+			<div class="divLetter" id="div2" ondrop="drop(event)"
+				ondragover="allowDrop(event)"></div>
+			<div class="divLetter" id="div4" ondrop="drop(event)"
+				ondragover="allowDrop(event)"></div>
+			<div class="divLetter" id="div6" ondrop="drop(event)"
+				ondragover="allowDrop(event)"></div>
+			<div class="divLetter" id="div8" ondrop="drop(event)"
+				ondragover="allowDrop(event)"></div>
+			<div class="divLetter" id="div10" ondrop="drop(event)"
+				ondragover="allowDrop(event)"></div>
+		</div>
+		<div class="divButton">
+			<button type="button" class="button"  data-reveal-id="myModal" onclick="checkAnswer()">
+				<i class="fi-check"></i> Check Your Answer
+			</button>
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
+<div class="small-12 large-12 columns alert-box success" style="display:hidden ;" data-alert="">
+	Success! Your message has been sent.
+ 	<a class="close" href="#">×</a></div>
+</div>
+<div>
+<div id="myModal" class="reveal-modal tiny" data-reveal>  
+  </div>
+  <script>
+      $(document).foundation();
+   </script>
+</div>
+
+
